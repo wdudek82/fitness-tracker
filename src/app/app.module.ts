@@ -7,9 +7,11 @@ import { CoreModule } from "./core/core.module";
 import { AuthModule } from "./auth/auth.module";
 import { TrainingModule } from "./training/training.module";
 import { SharedModule } from "./shared/shared.module";
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WelcomeComponent],
   imports: [
     CoreModule,
     SharedModule,
